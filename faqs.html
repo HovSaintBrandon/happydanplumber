@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Happy Dan Plumbers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">HDP</div>
+                <div class="logo-text">
+                    <span class="logo-name">Happy Dan</span>
+                    <span class="logo-tagline">Plumbers</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="nav-links">
+                <a href="index.html#home" class="nav-link">Home</a>
+                <a href="index.html#services" class="nav-link">Services</a>
+                <a href="index.html#emergency" class="nav-link nav-link-primary">Emergency Plumbing</a>
+                <a href="index.html#why-us" class="nav-link">Why Us</a>
+                <a href="index.html#about" class="nav-link">About Us</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link">Resources</a>
+                    <div class="dropdown-menu">
+                        <a href="faqs.html" class="dropdown-link">FAQs</a>
+                        <a href="blog.html" class="dropdown-link">Blog</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="nav-cta">
+                <div class="phone-cta">
+                    <a href="tel:0700000000" class="phone-number">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        0700 000 000
+                    </a>
+                    <span class="phone-subtext">24/7 Emergency Service</span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                <svg class="close-icon hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M18 6 6 18" />
+                    <path d="m6 6 12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div class="container mobile-nav hidden" id="mobileNav">
+            <a href="index.html#home" class="mobile-nav-link">Home</a>
+            <a href="index.html#services" class="mobile-nav-link">Services</a>
+            <a href="index.html#emergency" class="mobile-nav-link">Emergency</a>
+            <a href="index.html#why-us" class="mobile-nav-link">Why Choose Us</a>
+            <a href="index.html#about" class="mobile-nav-link">About Us</a>
+            <a href="faqs.html" class="mobile-nav-link">FAQs</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <div class="mobile-nav-cta">
+                <a href="tel:0700000000" class="btn btn-primary btn-full">Call Now</a>
+                <a href="index.html#contact" class="btn btn-navy btn-full">Book Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="page-header-bg"></div>
+        <div class="container page-header-content">
+            <h1 class="page-title">Frequency Asked Questions</h1>
+            <p class="page-subtitle">Common questions about our plumbing services</p>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer 24/7 emergency services?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer 24/7 emergency plumbing services. We understand that plumbing issues can happen
+                            at any time, so our team is always ready to respond to your call, day or night.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How much do you charge for a service call?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our service call fees vary depending on the location and the nature of the issue. We provide
+                            upfront pricing and will give you a detailed estimate before starting any work.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How long does a typical bathroom renovation take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A typical bathroom renovation can take anywhere from 1 to 3 weeks, depending on the
+                            complexity of the project, size of the bathroom, and materials selected. We will provide a
+                            timeline during the planning phase.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you guarantee your work?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We stand behind our work with a satisfaction guarantee. All our installations and
+                            repairs come with a warranty for your peace of mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">HDP</div>
+                        <div class="logo-text">
+                            <span class="logo-name light">Happy Dan</span>
+                            <span class="logo-tagline light">Plumbers</span>
+                        </div>
+                    </div>
+                    <p class="footer-desc">Professional plumbing and interior design services you can trust. Available
+                        24/7 for all your emergency needs.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#emergency">Emergency</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        0700 000 000
+                    </p>
+                    <p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        info@happydanplumbers.com
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Happy Dan Plumbers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
