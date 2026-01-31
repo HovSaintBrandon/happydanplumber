@@ -104,51 +104,8 @@
     <!-- Blog Section -->
     <section class="section">
         <div class="container">
-            <div class="blog-grid">
-                <!-- Blog Card 1 -->
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1542013936693-884638332954?w=800&q=80"
-                            alt="Professional plumbing tools being used in Nairobi">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">January 20, 2026</div>
-                        <h3 class="blog-title">5 Signs You Have a Hidden Leak</h3>
-                        <p class="blog-excerpt">Hidden leaks can cause major damage before you even notice them. Here
-                            are 5 subtle signs to watch out for.</p>
-                        <a href="#" class="blog-link">Read More &rarr;</a>
-                    </div>
-                </article>
-
-                <!-- Blog Card 2 -->
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?w=800&q=80"
-                            alt="Modern bathroom renovation example in Kenya">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">January 15, 2026</div>
-                        <h3 class="blog-title">Why You Should Upgrade to a Low-Flow Toilet</h3>
-                        <p class="blog-excerpt">Save water and money with a modern, efficient toilet. Learn about the
-                            benefits of upgrading today.</p>
-                        <a href="#" class="blog-link">Read More &rarr;</a>
-                    </div>
-                </article>
-
-                <!-- Blog Card 3 -->
-                <article class="blog-card">
-                    <div class="blog-image">
-                        <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&q=80"
-                            alt="Kitchen sink maintenance in Kisumu">
-                    </div>
-                    <div class="blog-content">
-                        <div class="blog-meta">January 10, 2026</div>
-                        <h3 class="blog-title">How to Maintain Your Garbage Disposal</h3>
-                        <p class="blog-excerpt">Keep your kitchen running smoothly with these simple maintenance tips
-                            for your garbage disposal.</p>
-                        <a href="#" class="blog-link">Read More &rarr;</a>
-                    </div>
-                </article>
+            <div class="blog-grid" id="blogGrid">
+                <!-- Blog posts will be loaded here -->
             </div>
         </div>
     </section>
@@ -214,7 +171,10 @@
         </div>
     </footer>
 
+    <div id="toastContainer" class="toast"></div>
+    <script src="api.js"></script>
     <script src="script.js"></script>
+    <script src="blog-script.js"></script>
 </body>
 
 </html>
