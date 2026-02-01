@@ -1,27 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage - top priority -->
   <url>
     <loc>https://happydanplumbers.co.ke/</loc>
-    <lastmod>2026-01-30</lastmod>
+    <lastmod>2026-02-01</lastmod>  <!-- Update to today's or last change date -->
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Key service landing pages (create these for better rankings) -->
   <url>
-    <loc>https://happydanplumbers.co.ke/index.html</loc>
-    <lastmod>2026-01-30</lastmod>
+    <loc>https://happydanplumbers.co.ke/emergency-plumber-nairobi</loc>
+    <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://happydanplumbers.co.ke/blog.html</loc>
-    <lastmod>2026-01-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://happydanplumbers.co.ke/biodigester-installation-kenya</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://happydanplumbers.co.ke/faqs.html</loc>
-    <lastmod>2026-01-30</lastmod>
+    <loc>https://happydanplumbers.co.ke/solar-water-heater-installation-nairobi</loc>
+    <lastmod>2026-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://happydanplumbers.co.ke/drain-cleaning-nairobi</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Location pages (huge for local pack) -->
+  <url>
+    <loc>https://happydanplumbers.co.ke/plumber-nairobi</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://happydanplumbers.co.ke/plumber-nakuru</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://happydanplumbers.co.ke/plumber-kisumu</loc>
+    <lastmod>2026-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Static pages -->
+  <url>
+    <loc>https://happydanplumbers.co.ke/about</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://happydanplumbers.co.ke/faqs</loc>
+    <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://happydanplumbers.co.ke/contact</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog index or recent posts (add more as you publish) -->
+  <url>
+    <loc>https://happydanplumbers.co.ke/blog</loc>
+    <lastmod>2026-02-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Example blog post -->
+  <url>
+    <loc>https://happydanplumbers.co.ke/blog/biodigester-vs-septic-tank-kenya</loc>
+    <lastmod>2026-01-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

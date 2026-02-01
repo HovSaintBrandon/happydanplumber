@@ -174,6 +174,9 @@ document.addEventListener('DOMContentLoaded', function () {
   // Open Appointment
   document.querySelectorAll('.btn-navy, .btn-primary').forEach(btn => {
     if (btn.textContent.includes('Book') || btn.textContent.includes('Schedule')) {
+      // Skip buttons inside forms that are type "submit"
+      if (btn.closest('form') && btn.getAttribute('type') === 'submit') return;
+
       btn.addEventListener('click', (e) => {
         if (btn.closest('#contactForm')) return; // Don't trigger on contact form submit button
         e.preventDefault();
