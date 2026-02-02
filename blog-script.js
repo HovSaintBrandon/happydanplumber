@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 return `
                     <article class="blog-card" style="opacity: 1; transform: translateY(0);">
                         <div class="blog-image">
-                            <img src="${post.image || 'https://images.unsplash.com/photo-1542013936693-884638332954?w=800&q=80'}"
+                            <img src="${post.image || window.happyDanApi.getCategoryImage(post.categories)}"
                                 alt="${post.title}">
                         </div>
                         <div class="blog-content">

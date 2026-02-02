@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             postMeta.textContent = `${date} | By ${post.author || 'Admin'}`;
 
-            postImage.src = post.image || 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=1200&q=80';
+            postImage.src = post.image || window.happyDanApi.getCategoryImage(post.categories);
             postImage.alt = post.title;
 
             // Using innerHTML because content is stored as HTML string in the API example provided
