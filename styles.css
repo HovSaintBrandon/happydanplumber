@@ -1512,6 +1512,7 @@ ul {
 .footer-bottom-links a:hover {
   color: var(--primary);
 }
+
 /* ========================================
    Modals
 ======================================== */
@@ -1597,4 +1598,105 @@ ul {
 .animate-in {
   opacity: 1 !important;
   transform: translateY(0) !important;
+}
+
+/* ========================================
+   Service Detail Modal
+======================================== */
+.service-modal-content {
+  max-width: 800px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .service-modal-content {
+    flex-direction: row;
+  }
+}
+
+.service-modal-grid {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .service-modal-grid {
+    flex-direction: row;
+  }
+}
+
+.service-modal-image {
+  height: 250px;
+  background: #f0f0f0;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .service-modal-image {
+    height: auto;
+    min-height: 400px;
+  }
+}
+
+.service-modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-modal-info {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+#modalServiceTitle {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+#modalServiceDescription {
+  color: var(--muted-foreground);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.modal-cta {
+  margin-top: auto;
+}
+
+.service-card {
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: white;
+  border: none;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
+
+.close-modal:hover {
+  background: var(--primary);
+  color: white;
 }

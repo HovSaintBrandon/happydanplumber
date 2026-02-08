@@ -317,3 +317,79 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// ========================================
+// Service Detail Modal
+// ========================================
+document.addEventListener('DOMContentLoaded', function () {
+  const serviceModal = document.getElementById('serviceDetailModal');
+  const closeServiceBtn = document.getElementById('closeServiceModal');
+  const modalImage = document.getElementById('modalServiceImage');
+  const modalTitle = document.getElementById('modalServiceTitle');
+  const modalDesc = document.getElementById('modalServiceDescription');
+  const modalBookBtn = document.getElementById('modalBookBtn');
+  const appointmentModal = document.getElementById('appointmentModal');
+  const appServiceSelect = document.getElementById('appService');
+
+  if (!serviceModal) return;
+
+  // Open Service Modal
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', function () {
+      const img = this.getAttribute('data-service-image');
+      const info = this.getAttribute('data-service-info');
+      const title = this.querySelector('.service-title').textContent;
+
+      if (img && info && title) {
+        modalImage.src = img;
+        modalImage.alt = title;
+        modalTitle.textContent = title;
+        modalDesc.textContent = info;
+        serviceModal.classList.add('active');
+
+        // Store title for booking
+        modalBookBtn.setAttribute('data-service', title);
+      }
+    });
+  });
+
+  // Close Service Modal
+  if (closeServiceBtn) {
+    closeServiceBtn.addEventListener('click', () => {
+      serviceModal.classList.remove('active');
+    });
+  }
+
+  // Close on outside click is handled by the global window click listener in previous section,
+  // but we need to ensure it covers this new modal ID if strictly checked, 
+  // or we can add a specific one here.
+  // The existing listener checks specific IDs. Let's add one here to be safe and specific.
+  window.addEventListener('click', (e) => {
+    if (e.target === serviceModal) {
+      serviceModal.classList.remove('active');
+    }
+  });
+
+  // Book from Service Modal
+  if (modalBookBtn) {
+    modalBookBtn.addEventListener('click', () => {
+      serviceModal.classList.remove('active');
+
+      // Open Appointment Modal
+      if (appointmentModal) {
+        appointmentModal.classList.add('active');
+
+        // Pre-select service if possible
+        const serviceName = modalBookBtn.getAttribute('data-service');
+        if (serviceName && appServiceSelect) {
+          // Try to find a matching option
+          const options = Array.from(appServiceSelect.options);
+          const matchingOption = options.find(opt => opt.value === serviceName || opt.text === serviceName);
+          if (matchingOption) {
+            appServiceSelect.value = matchingOption.value;
+          }
+        }
+      }
+    });
+  }
+});
