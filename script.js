@@ -308,11 +308,22 @@ document.addEventListener('DOMContentLoaded', function () {
   // Smooth Scroll
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function (e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
+      const href = this.getAttribute('href');
+      if (href === '#') {
         e.preventDefault();
-        const offset = document.querySelector('.navbar').offsetHeight;
-        window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        return;
+      }
+
+      try {
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const offset = document.querySelector('.navbar').offsetHeight;
+          window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        }
+      } catch (err) {
+        // Ignore invalid selectors
+        console.warn('Invalid scroll target:', href);
       }
     });
   });
